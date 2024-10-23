@@ -1,0 +1,27 @@
+﻿@{
+	Layout = "_Root.Head";
+}
+
+<div class="master-wrapper-page">
+
+	<!--Header-->
+	@{await Html.RenderPartialAsync("_Header");}
+
+	<!--Header Menu-->
+	<div class="header-menu">
+
+	</div>
+
+	<!--Page Body Content-->
+	<div class="master-wrapper-content">
+		<div class="master-column-wrapper">
+			@RenderBody()
+		</div>
+	</div>
+
+	<!--Footer-->
+	<div class="footer">
+
+	</div>
+
+</div>
