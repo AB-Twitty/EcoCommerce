@@ -3,12 +3,28 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{3762E3EC-B453-4A1D-9539-A0D7F05FD481}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eco.Web", "Eco.Web\Eco.Web.csproj", "{A8E34275-B541-4D22-8428-A94D05340AC2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8E34275-B541-4D22-8428-A94D05340AC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8E34275-B541-4D22-8428-A94D05340AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8E34275-B541-4D22-8428-A94D05340AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8E34275-B541-4D22-8428-A94D05340AC2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A8E34275-B541-4D22-8428-A94D05340AC2} = {3762E3EC-B453-4A1D-9539-A0D7F05FD481}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B870F82-7BDF-43D7-B290-26B8130B2B14}
 	EndGlobalSection
 EndGlobal
