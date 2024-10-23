@@ -1,0 +1,68 @@
+﻿@using Eco.Web.Models.Customer;
+@model LoginModel
+
+@{
+	Layout = "_ColumnsOne";
+}
+
+
+<div class="page login-page">
+	<div class="page-title">
+		<h1>Welcome, Please Sign In!</h1>
+	</div>
+
+	<div class="page-body">
+
+		<div class="new-wrapper">
+			<div class="title">
+				<strong>New Customer</strong>
+			</div>
+
+			<div class="text">
+				By creating an account on our website, you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.
+			</div>
+
+			<div class="buttons">
+				<button type="button" class="button-1">Register</button>
+			</div>
+		</div>
+
+		<div class="returning-wrapper fieldset">
+			<form asp-action="Login" asp-route-returnUrl="@Context.Request.Query["ReturnUrl"]" method="post">
+				<div asp-validation-summary="ModelOnly" class="message-error">Validations</div>
+
+				<div class="title">
+					<strong>Returning Customer</strong>
+				</div>
+
+				<div class="form-fields">
+
+					<div class="inputs">
+						<label asp-for="Email"></label>
+						<input asp-for="Email" class="email" />
+						<span asp-validation-for="Email"></span>
+					</div>
+					<div class="inputs">
+						<label asp-for="Password"></label>
+						<input asp-for="Password" class="password" />
+						<span asp-validation-for="Password"></span>
+					</div>
+					<div class="inputs reversed">
+						<input asp-for="RememberMe" />
+						<label asp-for="RememberMe"></label>
+						<span class="forgot-password">
+							<a href="#">Forget Password?</a>
+						</span>
+					</div>
+
+				</div>
+
+				<div class="buttons">
+					<button type="submit" class="button-1">Login</button>
+				</div>
+			</form>
+		</div>
+
+	</div>
+
+</div>
